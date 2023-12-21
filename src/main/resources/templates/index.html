@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="/css/bootstrap.css">
+</head>
+<body class="bg-secondary">
+
+<div class="container" th:object="${listOfAllUsers}">
+    <table class="table table-striped rounded-3 overflow-hidden">
+        <thead class="table-dark">
+        <tr class="text-center h1 col-12">
+            <th colspan="7">Potting Line</th>
+        </tr>
+        <tr class="text-start" >
+            <th class="col-1" scope="col">ID</th>
+            <th class="col-2" scope="col">First Name</th>
+            <th class="col-3" scope="col">Last Name</th>
+            <th class="col-2" scope="col">Email</th>
+            <th class="col-2" scope="col">Date Of Birth</th>
+            <th class="col-1" scope="col">Phone Number</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="text-start" th:each="viewDTO : ${listOfViewDTO.getViewDTO()}">
+            <th class="col-1" scope="row" th:text="${viewDTO.getId()}">1</th>
+            <td class="col-2" th:text="${viewDTO.getFirstName()}">Fist Name</td>
+            <td class="col-3" th:text="${viewDTO.getLastName()}">Last Name</td>
+            <td class="col-2" th:text="${viewDTO.getEmail()}">Email</td>
+            <td class="col-2" th:text="${viewDTO.getDateOfBirth()}">Date</td>
+            <td class="col-1" th:text="${viewDTO.getPhoneNumber()}">Phone Number</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+
+
+<script src="/js/bootstrap.bundle.js"></script>
+</body>
+</html>
