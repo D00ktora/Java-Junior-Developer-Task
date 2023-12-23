@@ -1,3 +1,3 @@
 # Java-Junior-Developer-Task
 
-![Simple_Rest_API](https://github.com/D00ktora/Java-Junior-Developer-Task/assets/121710132/83c111ff-7e7b-41ff-8e86-b4061d475b51)
+![Simple_Rest_API](https://github.com/D00ktora/Java-Junior-Developer-Task/assets/121710132/385e3bbe-6bf2-4544-acf3-2e3f84318547)
