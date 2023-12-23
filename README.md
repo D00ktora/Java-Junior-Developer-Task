@@ -37,6 +37,18 @@ https://www.postman.com/downloads
 **Now can run the project.**
 
 ## API Reference
+When app is start for first time, database with one user will be initialised. 
+Here is the user that will be created and you can use later in your requests. 
+```
+{
+    "id": 1,
+    "firstName": "Stilyan",
+    "lastName": "Petrov",
+    "dateOfBirth": "1990-10-03",
+    "phoneNumber": "089xxxxxxx",
+    "email": "x.x.x.xxxx@gmail.com"
+}
+```
 **In order to reach the API references you need to put in hltm Authorization headers:**
    *  Email and Password encripted witl Basic64 --> Send this as POST request to `http://localhost:8080/api/token` end point. Return will be `String` with `JWT` token, generated for this account, that will be availible for 60 minutes.
    *  JWT Token --> Sned this to any of the end points bellow.
