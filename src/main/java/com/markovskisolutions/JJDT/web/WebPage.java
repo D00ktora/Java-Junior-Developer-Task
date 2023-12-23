@@ -8,11 +8,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 
 @Controller
-public class webPage {
+public class WebPage {
 
     private final WebService webService;
 
-    public webPage(WebService webService) {
+    public WebPage(WebService webService) {
         this.webService = webService;
     }
 

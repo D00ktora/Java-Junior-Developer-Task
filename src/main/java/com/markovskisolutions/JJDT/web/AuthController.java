@@ -41,8 +41,8 @@ public class AuthController {
     }
 
 
-    @PostMapping("/api/token/{username}")
-    public String token(@PathVariable String username, Authentication authentication) {
+    @PostMapping("/api/token/{email}")
+    public String token(@PathVariable String email, Authentication authentication) {
         return tokenService.generateToken(authentication);
     }
 }
