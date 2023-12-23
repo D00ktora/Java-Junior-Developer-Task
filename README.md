@@ -1,7 +1,7 @@
 
 ![Simple_REST_API (1)](https://github.com/D00ktora/Java-Junior-Developer-Task/assets/121710132/7489e152-ef3f-429a-80cf-6602866c270f)
 # Java-Junior-Developer-Task
-A simple Rest API  with CRUD operations, writan in Java language, that allow you to mannage users information and store it into SQL database.
+A simple Rest API with CRUD operations, written in Java, that allow you to manage users information and store it in a SQL database.
 
 ## INTRO
  What will find in this project.
@@ -13,32 +13,32 @@ A simple Rest API  with CRUD operations, writan in Java language, that allow you
     * Simple web visualisation.
 
 ## INSTALATION
-Follow the steps bellow in order to run and consume this project.
+Follow the steps below in order to run and consume this project.
       
-#### Clone the project or simple download it.
+#### Clone the project or simply download it.
 https://github.com/D00ktora/Java-Junior-Developer-Task.git
 
-#### Instal IntelliJ or other Java IDE, that support Java.
+#### Install IntelliJ or other Java IDEs that support Java.
 https://www.jetbrains.com/idea/download
 
-#### Instal MySQL database.
+#### Install MySQL database.
 https://dev.mysql.com/downloads/installer/
 
-#### Instal Postman or other platform that can build and use APIs.
+#### Install Postman or another platform that can build and use APIs.
 https://www.postman.com/downloads
 
-#### Change following parameters in .yaml file.
+#### Change the following parameters in the.yaml file..
 [.yaml](https://github.com/D00ktora/Java-Junior-Developer-Task/blob/main/src/main/resources/application.yaml)
 
       1. username: root --> Change with your database user name.
       2. password: ${MY_PASSWORD} --> Change with your database password.
-      3. url: jdbc:mysql://localhost:3306/markovski_database?allowPublicKeyRetrieval=true&useSSL=false&createDatabaseIfNotExist=true&serverTimezone=UTC --> Change "markovski_database" with propper name for you database.
+      3. url: jdbc:mysql://localhost:3306/markovski_database?allowPublicKeyRetrieval=true&useSSL=false&createDatabaseIfNotExist=true&serverTimezone=UTC --> Change "markovski_database" with a proper name for your database.
 
 **Now can run the project.**
 
 ## API Reference
-When app is start for first time, database with one user will be initialised. 
-Here is the user that will be created and you can use later in your requests. 
+When the app is started for the first time, a database with one user will be initialised.
+Here is the user that will be created, which you can use later in your requests.
 ```
 {
     "id": 1,
@@ -49,11 +49,11 @@ Here is the user that will be created and you can use later in your requests.
     "email": "x.x.x.xxxx@gmail.com"
 }
 ```
-**In order to reach the API references you need to put in hltm Authorization headers:**
-   *  Email and Password encripted witl Basic64 --> Send this as POST request to `http://localhost:8080/api/token` end point. Return will be `String` with `JWT` token, generated for this account, that will be availible for 60 minutes.
-   *  JWT Token --> Sned this to any of the end points bellow.
+**In order to reach the API references, you need to put in the hltm authorization headers.:**
+   *  Email and password encrypted with Basic64 --> Send this as a POST request to the `http://localhost:8080/api/token` end point. The return will be a `String` with a `JWT` token, generated for this account, that will be available for 60 minutes.
+   *  JWT Token --> Sned this to any of the end points below.
 
-### 1. Get all users. (Sorted by last name ascending then by date of birth ascending)
+### 1. Get all users. (Sorted by last name ascending, then by date of birth ascending.)
 
 ```http
   GET http://localhost:8080
