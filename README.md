@@ -232,7 +232,7 @@ Body that is need to be setup:
 ```http
   POST http://localhost:8080/modify/{id}
 ```
- Parameter in body | Type     | Description                |
+ Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
 | `id` | `String` | **Required**. Id of the user that is need to be updated |
 
@@ -256,7 +256,7 @@ Body that is need to be setup:
 ```http
   POST http://localhost:8080/delete/{id}
 ```
- Parameter in body | Type     | Description                |
+ Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
 | `id` | `String` | **Required**. Id of the user that is need to be updated |
 
